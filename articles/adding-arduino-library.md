@@ -43,8 +43,22 @@ stepper.ino
 youkey_stepper.c	youkey_stepper.h
 ```
 
-以下の参考サイトに記載の通りに作っていただければ良いと思います。
+一番重要なのはlibrary.propertiesだと思います。参考までに僕のものを載せておきます。
 
+```:library.properties
+name=youkey_stepper
+version=1.0.0
+author=Yuki MIYAKOSHI
+maintainer=Yuki MIYAKOSHI <自身のメールアドレス>
+sentence=This is a library dedicated to stepper motors for Arduino and microcontrollers.
+paragraph=The excitation system of multiple stepper motors can be easily changed even during operation, and the direction of rotation of each can also be adjusted.
+category=Device Control
+url=https://github.com/yuki-miyakoshi/youkey_stepper
+architectures=*
+
+```
+
+以下の参考サイトに記載の通りに作っていただければ良いと思います。
 
 ## 参考サイト
 https://arduino.github.io/arduino-cli/0.26/library-specification/
@@ -132,4 +146,4 @@ https://github.com/yuki-miyakoshi/youkey_stepper
 
 本記事で使われたライブラリです。
 
-公式のステッピングモータのライブラリでは励磁方式が2-2相励磁で固定ですが、1-1相励磁や1-2相励磁なども使うことができます。詳しくはGithubで確認して下さい。
+公式のステッピングモータのライブラリであるStepperでは励磁方式が2-2相励磁で固定ですが、僕のライブラリは1-1相励磁や1-2相励磁なども使うことができます。詳しくはGithubで確認して下さい。
