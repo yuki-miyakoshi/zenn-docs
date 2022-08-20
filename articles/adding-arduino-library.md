@@ -1,6 +1,6 @@
 ---
-title: "Arduino公式ライブラリに申請する方法が変わりましたよ！"
-emoji: "😊"
+title: "Arduinoのライブラリマネージャーに申請する方法が変わりましたよ！"
+emoji: "📝"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Arduino","GitHub","Arduinoide"]
 published: true
@@ -67,11 +67,11 @@ https://arduino.github.io/arduino-cli/0.26/library-specification/
 
 バージョン命名はセマンティック・バージョニングという命名規則でつけることをおすすめします。今回はv1.0.0でTagを切ります。
 
-![](/images/image20220819163308_001.png)
+![](/images/adding-arduino-library/image20220819163308_001.png)
 
 `Publish release`を押して以下の画面のようになれば無事成功です。
 
-![](/images/image20220819163308_003.png)
+![](/images/adding-arduino-library/image20220819163308_003.png)
 
 # Arduino公式レポジトリをForkしましょう。 
 
@@ -82,7 +82,7 @@ Instructionsの2番にあるリンクをクリックしてください。
 ## 参考リンク
 https://github.com/arduino/library-registry#readme
 
-![](/images/image20220819163308_004.png)
+![](/images/adding-arduino-library/image20220819163308_004.png)
 
 以下のような画面になりましたら、Edit fileの中で1番下の行まで移動して自分のレポジトリのURLを書き込んじゃって下さい。
 
@@ -90,13 +90,13 @@ https://github.com/arduino/library-registry#readme
 https://github.com/yuki-miyakoshi/youkey_stepper
 ```
 
-![](/images/image20220819163308_005.png)
+![](/images/adding-arduino-library/image20220819163308_005.png)
 
 私の場合は5107行目に書き込んだので5107番目のライブラリということになりそうですね。
 
 では、そのページの一番下、`Propose changes`を押して下さい。(何も説明などは書き込まなくて良いです。)
 
-![](/images/image20220819173634_001.png)
+![](/images/adding-arduino-library/image20220819173634_001.png)
 
 :::message
 スクリーンショットを撮り忘れましたが、もしかしたら`Fork this repository`というボタンが出てくるかもしれないので、押して下さい。
@@ -106,7 +106,7 @@ https://github.com/yuki-miyakoshi/youkey_stepper
 
 以下の画面になると思います。この画面で`Create pull request`を押して下さい。
 
-![](/images/image20220819163308_006.png)
+![](/images/adding-arduino-library/image20220819163308_006.png)
 
 # しばらく待ちましょう。Botが作業中です!
 
@@ -116,19 +116,19 @@ https://github.com/yuki-miyakoshi/youkey_stepper
 ５分くらいは少なくてもかかります。気長に待ちましょう。
 :::
 
-![](/images/image20220819163308_008.png)
+![](/images/adding-arduino-library/image20220819163308_008.png)
 
 # この画面が出れば完成です。
 
 以下の画面が出れば無事申請終了です。
 
-![](/images/image20220819163308_002.png)
+![](/images/adding-arduino-library/image20220819163308_002.png)
 
 # Arduino IDE ライブラリマネージャーで確認してみましょう！
 
 ６時間くらい経つとライブラリマネージャーでも検索可能になっていると思います。
 
-![](/images/image20220819163308_009.png)
+![](/images/adding-arduino-library/image20220819163308_009.png)
 
 :::message
 作者の名前では検索できないみたいです。ライブラリ名で検索しましょう。
